@@ -1,0 +1,85 @@
+:root {
+  --sedans-color: hsl(31, 77%, 52%);
+  --suv-color: hsl(184, 100%, 22%);
+  --luxury-color: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9375rem; 
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.cards-container {
+  list-style: none;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.each-card {
+  padding: 2rem;
+}
+
+.sedan-card {
+  background-color: var(--sedans-color);
+}
+
+.suv-card {
+  background-color: var(--suv-color);
+}
+
+.luxury-card {
+  background-color: var(--luxury-color);
+}
+
+h2 {
+  margin: 1rem 0;
+}
+
+.learn-more {
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  padding: 0.6rem 0.5rem;
+  margin: 0.7rem 0;
+  border-radius: 1rem;
+  border: solid 0.1rem transparent;
+}
+
+.sedan-card > .learn-more {
+  color: var(--sedans-color);
+}
+
+.suv-card > .learn-more {
+  color: var(--suv-color);
+}
+
+.luxury-card > .learn-more {
+  color: var(--luxury-color);
+}
+
+.learn-more:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.attribution { 
+  margin-top: 1rem;
+  font-size: 11px; text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
